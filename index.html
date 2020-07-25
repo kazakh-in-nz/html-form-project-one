@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Fitness Reservation Page</title>
+    <link rel="stylesheet" type="text/css" href="style.css" />
+  </head>
+  <body>
+    <header><h3>Fitness Reservation Page</h3></header>
+    <main>
+      <form action="#">
+        <fieldset>
+          <legend>Member Demographics</legend>
+          <!-- name -->
+          <label for="name">Name</label>
+          <input
+            type="text"
+            name="Name"
+            id="name"
+            placeholder="Full Name"
+            required
+          />
+          <p>Are you a Member?</p>
+          <!-- radio buttons -->
+          <label for="member">Member</label>
+          <input type="radio" id="member" name="member" checked />
+          <label for="non-member">Non-member</label>
+          <input type="radio" id="non-member" name="member" />
+          <!-- email -->
+          <label for="email">Email</label>
+          <input type="email" name="Name" id="email" required />
+        </fieldset>
+
+        <!-- drop down menu -->
+        <label for="sport-facility">Facility</label>
+        <select name="facility" id="sport-facility">
+          <option value="badminton">Badminton</option>
+          <option value="indoor-soccer">Soccer</option>
+          <option value="volleyball">Volleyballs</option>
+        </select>
+
+        <!-- time and date -->
+        <p>Select a seservation date and time:</p>
+        <input type="date" id="availaility-date" />
+      </form>
+    </main>
+  </body>
+</html>
