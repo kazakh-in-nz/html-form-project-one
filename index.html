@@ -7,7 +7,7 @@
     <link rel="stylesheet" type="text/css" href="style.css" />
   </head>
   <body>
-    <header><h3>Fitness Reservation Page</h3></header>
+    <header><p>Fitness Reservation Page</p></header>
     <main>
       <form action="#">
         <fieldset>
@@ -21,12 +21,16 @@
             placeholder="Full Name"
             required
           />
-          <p>Are you a Member?</p>
-          <!-- radio buttons -->
-          <label for="member">Member</label>
-          <input type="radio" id="member" name="member" checked />
-          <label for="non-member">Non-member</label>
-          <input type="radio" id="non-member" name="member" />
+
+          <div class="membership">
+            <p>Are you a Member?</p>
+            <!-- radio buttons -->
+            <label for="member">Member</label>
+            <input type="radio" id="member" name="member" checked />
+            <label for="non-member">Non-member</label>
+            <input type="radio" id="non-member" name="member" />
+          </div>
+
           <!-- email -->
           <label for="email">Email</label>
           <input type="email" name="Name" id="email" required />
@@ -43,7 +47,20 @@
         <!-- time and date -->
         <p>Select a seservation date and time:</p>
         <input type="date" id="availaility-date" />
+        <input type="time" id="availaility-date" />
+
+        <div class="agreement">
+          <input
+            type="checkbox"
+            id="reservation-agreement"
+            value="reservation-agreement"
+          />
+          <label for="reservation-agreement"
+            >I agree to the club's reservation policy</label
+          >
+        </div>
       </form>
+      <input type="submit" id="submit" value="Submit" />
     </main>
   </body>
 </html>

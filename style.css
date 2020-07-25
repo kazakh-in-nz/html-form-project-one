@@ -1,19 +1,40 @@
 body {
   margin: 0;
   padding: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.membership {
+  margin: 10px;
+}
+
+.membership p {
+  margin-bottom: 10px;
 }
 
 header {
-  width: 80%;
-  margin: auto;
+  width: 40%;
+  margin: 15px auto;
   text-align: center;
+  background-color: #d61f57;
+  color: white;
+}
+
+fieldset {
+  margin-bottom: 15px;
+}
+
+input[type='email'],
+input[type='select'],
+.agreement {
+  margin: 15px 0px;
 }
 
 main {
   width: 80%;
   margin: auto;
   padding: 20px;
-  border: 3px dashed #76140c;
-  background-color: aquamarine;
+  border: 3px dashed #800000;
+  background-color: #eff5fb;
   text-align: center;
 }
